@@ -38,7 +38,7 @@ namespace TestLambdaExpression
 
             //--Example to use Lambda instead of Predicate
             var lBooks = new BookRepository().GetBooks();
-            var lCheapBooks = books.FindAll(book => book.Price < 10);
+            var lCheapBooks = lBooks.FindAll(book => book.Price < 10);
 
             foreach (var book in lCheapBooks)
             {
